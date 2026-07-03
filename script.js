@@ -36,14 +36,14 @@ function extractVideoId(url, platform) {
             match = url.match(/\/status\/(\d+)/);
             return match ? match[1] : null;
         case 'vimeo':
-            match = url.match(/\/vimeo\.com\/(\d+)/) || url.match(/\/vimeo\.com\/(\d+)/);
+            match = url.match(/\/vimeo\.com\/(\d+)/);
             return match ? match[1] : null;
         default:
             return null;
     }
 }
 
-// Get Video Info (Thumbnail + Title)
+// Get Video Info
 async function getVideoInfo(url) {
     const platform = detectPlatform(url);
     const videoId = extractVideoId(url, platform);
@@ -65,9 +65,7 @@ async function getVideoInfo(url) {
         // Facebook
         else if (platform === 'facebook') {
             info.title = 'Facebook Video';
-            // Facebook thumbnail via graph
             info.thumbnail = `https://graph.facebook.com/v18.0/${videoId}/picture?type=normal`;
-            // Agar thumbnail na aaye toh fallback
             info.thumbnail = 'https://via.placeholder.com/480x360/1877f2/ffffff?text=Facebook+Video';
         }
         // TikTok
@@ -89,7 +87,6 @@ async function getVideoInfo(url) {
         else if (platform === 'instagram') {
             info.title = 'Instagram Video';
             info.thumbnail = 'https://via.placeholder.com/480x360/d62976/ffffff?text=Instagram+Video';
-            // Instagram embed thumbnail
             try {
                 const response = await fetch(`https://api.instagram.com/oembed?url=${encodeURIComponent(url)}`);
                 const data = await response.json();
@@ -166,7 +163,6 @@ function showPreview(info) {
         </div>
     `;
 
-    // Download button click → Redirect
     const downloadBtn = videoPreview.querySelector('.download-btn-preview');
     downloadBtn.addEventListener('click', function() {
         window.location.href = REDIRECT_URL;
