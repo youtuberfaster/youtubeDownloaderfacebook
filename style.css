@@ -57,7 +57,7 @@ header h1 span {
     letter-spacing: 0.3px;
 }
 
-/* Platform Badges - CHHOTE BUTTONS */
+/* Platform Badges */
 .platform-badges {
     display: flex;
     flex-wrap: wrap;
@@ -235,7 +235,7 @@ header h1 span {
     margin-right: 14px;
 }
 
-/* Download Button - CHHOTA AUR STYLISH */
+/* Download Button */
 .download-btn-preview {
     padding: 10px 28px;
     border-radius: 50px;
@@ -269,67 +269,27 @@ footer {
     letter-spacing: 0.5px;
 }
 
-/* ======================================== */
-/* RESPONSIVE - Mobile & Laptop Perfect */
-/* ======================================== */
-
-/* Laptops & Desktops */
+/* ===== RESPONSIVE ===== */
 @media (min-width: 769px) {
-    .container {
-        padding: 45px 40px;
-    }
-    header h1 {
-        font-size: 3rem;
-    }
-    .badge {
-        font-size: 0.8rem;
-        padding: 6px 20px;
-    }
+    .container { padding: 45px 40px; }
+    header h1 { font-size: 3rem; }
+    .badge { font-size: 0.8rem; padding: 6px 20px; }
 }
 
-/* Tablets */
 @media (max-width: 768px) {
-    .container {
-        padding: 30px 22px;
-        border-radius: 28px;
-    }
-    header h1 {
-        font-size: 2.2rem;
-    }
-    .badge {
-        font-size: 0.7rem;
-        padding: 4px 14px;
-    }
-    .input-group button {
-        padding: 11px 22px;
-        font-size: 0.9rem;
-    }
+    .container { padding: 30px 22px; border-radius: 28px; }
+    header h1 { font-size: 2.2rem; }
+    .badge { font-size: 0.7rem; padding: 4px 14px; }
+    .input-group button { padding: 11px 22px; font-size: 0.9rem; }
 }
 
-/* Mobile Phones */
 @media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-    .container {
-        padding: 22px 16px;
-        border-radius: 24px;
-    }
-    header h1 {
-        font-size: 1.8rem;
-    }
-    .subtitle {
-        font-size: 0.85rem;
-    }
-    .badge {
-        font-size: 0.6rem;
-        padding: 3px 10px;
-        gap: 4px;
-    }
-    .platform-badges {
-        gap: 5px;
-        margin-bottom: 18px;
-    }
+    body { padding: 10px; }
+    .container { padding: 22px 16px; border-radius: 24px; }
+    header h1 { font-size: 1.8rem; }
+    .subtitle { font-size: 0.85rem; }
+    .badge { font-size: 0.6rem; padding: 3px 10px; }
+    .platform-badges { gap: 5px; margin-bottom: 18px; }
     .input-group {
         flex-wrap: wrap;
         background: transparent;
@@ -353,50 +313,18 @@ footer {
         font-size: 0.95rem;
         border-radius: 50px;
     }
-    .video-preview {
-        min-height: 200px;
-        padding: 15px;
-    }
-    .video-preview .video-info {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .video-preview .thumbnail {
-        flex: 1;
-        width: 100%;
-        max-width: 280px;
-    }
-    .video-preview .details h3 {
-        font-size: 0.95rem;
-    }
-    .download-btn-preview {
-        padding: 8px 22px;
-        font-size: 0.85rem;
-    }
-    .empty-state .icon {
-        font-size: 2.8rem;
-    }
-    .empty-state p {
-        font-size: 0.9rem;
-    }
-    footer {
-        font-size: 0.65rem;
-        margin-top: 16px;
-        padding-top: 12px;
-    }
+    .video-preview { min-height: 200px; padding: 15px; }
+    .video-preview .video-info { flex-direction: column; align-items: center; text-align: center; }
+    .video-preview .thumbnail { flex: 1; width: 100%; max-width: 280px; }
+    .video-preview .details h3 { font-size: 0.95rem; }
+    .download-btn-preview { padding: 8px 22px; font-size: 0.85rem; }
+    .empty-state .icon { font-size: 2.8rem; }
+    .empty-state p { font-size: 0.9rem; }
+    footer { font-size: 0.65rem; margin-top: 16px; padding-top: 12px; }
 }
 
-/* Very Small Phones */
 @media (max-width: 360px) {
-    .container {
-        padding: 16px 12px;
-    }
-    header h1 {
-        font-size: 1.5rem;
-    }
-    .badge {
-        font-size: 0.55rem;
-        padding: 2px 8px;
-    }
+    .container { padding: 16px 12px; }
+    header h1 { font-size: 1.5rem; }
+    .badge { font-size: 0.55rem; padding: 2px 8px; }
 }
