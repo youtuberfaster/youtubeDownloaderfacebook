@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>SaveVideo - YouTube, Facebook, TikTok, Instagram Video Downloader</title>
+    <meta name="description" content="Download videos from YouTube, Facebook, TikTok, Instagram for free. Paste link and save any video in one click." />
+    <meta name="keywords" content="video download, youtube downloader, facebook video download, tiktok download, instagram video saver, free video download" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>🎬 <span>SaveVideo</span></h1>
+            <p class="subtitle">Paste link, preview video, and download in one click!</p>
+        </header>
+
+        <!-- Platform Badges -->
+        <div class="platform-badges">
+            <span class="badge youtube">▶️ YouTube</span>
+            <span class="badge facebook">📘 Facebook</span>
+            <span class="badge tiktok">🎵 TikTok</span>
+            <span class="badge instagram">📸 Instagram</span>
+            <span class="badge twitter">🐦 Twitter</span>
+            <span class="badge vimeo">🎥 Vimeo</span>
+        </div>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <div class="input-group">
+                <input type="text" id="videoUrl" placeholder="Paste video link here..." />
+                <button id="previewBtn">✨ Get Video</button>
+            </div>
+        </div>
+
+        <!-- Video Preview -->
+        <div id="videoPreview" class="video-preview">
+            <div class="empty-state">
+                <span class="icon">📥</span>
+                <p>Paste a video link and click "Get Video"</p>
+                <small>Supports: YouTube, Facebook, TikTok, Instagram, Twitter, Vimeo</small>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 SaveVideo — Free Video Downloader</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
